@@ -5,23 +5,23 @@
     flex-wrap: wrap;
 }
 
-body {
+html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 /* navigation-section */
-#navigation-Section {
+#navigation-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 #logo img {
     width: 120px;
     height: 50px;
     filter: invert(100%);
+    margin-top: 10px;
     padding: 2px;
     padding-bottom: 5px;
     transition: all 500ms;
@@ -37,6 +37,7 @@ body {
 #navbar ul {
     display: flex;
     list-style: none;
+    margin-top: 10px;
 }
 
 #navbar ul a {
@@ -53,27 +54,25 @@ body {
     color: #000;
 }
 
-#navigation-Section::before {
+#navigation-div::before {
     content: "";
     background: url(../img/bg1.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 15%;
+    height: 80px;
     z-index: -1;
-    /* opacity: 0.8; */
+    opacity: 0.8;
 }
 
-/* home-Section */
+/* home-div */
 #home {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -80px;
-    padding: 230px 50px;
+    padding: 90px 50px;
     border-radius: 10px;
     color: #000;
 }
@@ -82,29 +81,30 @@ body {
     margin-bottom: 20px;
 }
 
-#home-Section::before {
+#home-div::before {
     content: "";
     background: url('../img/bg2.png') no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 70%;
+    height: 72.5%;
     z-index: -1;
     opacity: .7;
 }
 
 
-/* service-Section */
-#service-Section {
+/* service-div */
+#service-div {
+    background-color: #ebafe5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#service-Section>h1 {
-    margin-top: -80px;
+#service-div>h1 {
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -148,9 +148,8 @@ body {
 .box>p {
     padding-top: 20px;
 }
-
-/* Clients Section  */
-#clients-Section {
+/* Clients div  */
+#clients-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,7 +177,7 @@ body {
     filter: invert(100%);
 }
 
-#clients-Section::before {
+#clients-div::before {
     content: "";
     background: url('../img/bg3.jpg') no-repeat center center/cover;
     position: absolute;
@@ -188,7 +187,7 @@ body {
     opacity: .4;
 }
 
-/* contact-us-Section */
+/* contact-us-div */
 #contact-us {
     display: flex;
     flex-direction: column;
@@ -238,12 +237,12 @@ textarea {
     text-align: center;
 }
 
-#contact-us-Section::before {
+#contact-us-div::before {
     content: "";
     background: url(../img/contact.jpg) no-repeat center center/cover;
     position: absolute;
     width: 100%;
-    height: 97%;
+    height: 99.5%;
     z-index: -1;
     opacity: 0.8;
 }
@@ -266,8 +265,9 @@ textarea {
 
 .btn {
     border-radius: 10px;
+    width:150px;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 20px;
     cursor: pointer;
     font-weight: bold;
@@ -291,5 +291,5 @@ textarea {
 }
 
 .trans:hover {
-    transform: scale(1.2);
+    transform: scale(1.08);
 }
