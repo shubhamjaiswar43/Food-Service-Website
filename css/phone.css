@@ -4,11 +4,24 @@
 
 /* navigation */
 #navbar ul a{
-    padding:2px 10px;
+    padding:2px 6px;
     font-size: 1.1rem;
 }
 #navigation-div::before{
     height: 110px;
+}
+#logo img{
+    width:100px;
+    height: 35px;
+    margin-top: 10px;
+    padding: 2px;
+    padding-bottom: 5px;
+}
+#logo img:hover {
+    /* background: #fff;
+    border-radius: 10px;
+    filter: invert(0%); */
+    transform: scale(1.05);
 }
 
 /* home-div */
