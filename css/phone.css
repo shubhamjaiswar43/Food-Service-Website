@@ -1,29 +1,90 @@
+*{
+    overflow-x: hidden;
+}
+
 /* navigation */
 #navbar ul a{
     padding:2px 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
-/* home-Section */
-/* service-Section */
+#navigation-div::before{
+    height: 110px;
+}
+
+/* home-div */
+#home{
+    padding:20px 10px;
+}
+#home-div::before{
+    height: 80%;
+}
+
+/* service-div */
 #service{
     flex-direction: column;
 }
 .box{
-    height: 400px;
+    width: auto;
+    height: auto;
+    padding:10px;
 }
-/* clients-Section */
+
+/* clients-div */
 #clients{
-    overflow: hidden;
+    /* overflow: hidden; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.logo>img {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+#logo-1>img,
+#logo-4>img {
+    width: 300px;
+    height: 180px;
+}
+
+#clients-div::before{
+    height: 80em;
+}
+
+/* contact-us-div */
+#contact-us-div{
+    overflow-x: visible;
+}
+#contact-us>form{
+    margin:10px;
+}
+.form-grp>input,textarea {
+    width: 250px;
+}
+#messege {
+    height: 120px;
+}
+#contact-us-div::before{
+    height: 100%;
+}
+
 /* End */
+#end{
+    font-size: 12px;
+}
+
 
 /* Utility Function */
 .h-primary{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .h-secondary{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .para{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
+.btn{
+    margin-top:10px;
+}   

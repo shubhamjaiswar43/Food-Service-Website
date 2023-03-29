@@ -186,7 +186,19 @@ html {
     z-index: -1;
     opacity: .4;
 }
-
+@media only screen and (max-width:1500px){
+    .logo>img {
+        padding: 30px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    #logo-1>img,
+    #logo-4>img {
+        width: 300px;
+        height: 180px;
+    }
+}
 /* contact-us-div */
 #contact-us {
     display: flex;
@@ -230,12 +242,6 @@ textarea {
     height: 150px;
 }
 
-/* End  */
-#end {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-}
 
 #contact-us-div::before {
     content: "";
@@ -247,6 +253,12 @@ textarea {
     opacity: 0.8;
 }
 
+/* End  */
+#end {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
 
 /* Utility Class */
 .h-primary {
